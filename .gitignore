@@ -1,0 +1,8 @@
+# Ignore .env file (environment variables)
+.env
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore cloudinaryConfig.js file
+cloudinaryConfig.js
