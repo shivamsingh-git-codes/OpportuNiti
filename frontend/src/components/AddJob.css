@@ -1,0 +1,81 @@
+.add-job-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-job-container h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.add-job-form .form-group {
+  margin-bottom: 15px;
+}
+
+.add-job-form label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Ensure all input fields and textareas are the same width and style */
+.add-job-form input[type="text"],
+.add-job-form input[type="date"],
+.add-job-form input[type="email"],
+.add-job-form input[type="url"],
+.add-job-form input[type="checkbox"],
+.add-job-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Adjust textarea height for better appearance */
+.add-job-form textarea {
+  resize: vertical; /* Allow vertical resize only */
+  height: 100px; /* Default height */
+}
+
+.add-job-form .submit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.add-job-form .submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: #ff4d4d;
+  text-align: center;
+}
+
+.success {
+  color: #28a745;
+  text-align: center;
+}
+.add-job-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+}

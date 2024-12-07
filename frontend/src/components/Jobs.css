@@ -1,0 +1,151 @@
+/* Container for all job listings */
+.jobs-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.jobs-container h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+/* Individual job card */
+.job-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
+  overflow: hidden;
+  width: 75%; /* 75% of the container width */
+  margin: 0 auto; /* Center the job card */
+  border: 5px solid transparent; /* Transparent initially */
+  animation: borderAnimation 3s linear infinite;
+  position: relative;
+  /* Use CSS variables for dynamic border colors */
+  border-image: linear-gradient(45deg, var(--border-color-1), var(--border-color-2));
+  border-image-slice: 1;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Job summary */
+.job-summary {
+  font-size: 16px;
+}
+
+.job-summary h2 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.job-summary h3 {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.job-summary p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.job-summary p strong {
+  color: #007bff;
+}
+
+/* Job details (hidden by default, but shown when expanded) */
+.job-details {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  display: block;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.job-details p {
+  margin: 8px 0;
+}
+
+.job-details p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.job-details p a:hover {
+  text-decoration: underline;
+}
+
+/* CSS animation for border color transition */
+@keyframes borderAnimation {
+  0% {
+    border-image: linear-gradient(45deg, var(--border-color-1), var(--border-color-2));
+  }
+  50% {
+    border-image: linear-gradient(45deg, var(--border-color-2), var(--border-color-1));
+  }
+  100% {
+    border-image: linear-gradient(45deg, var(--border-color-1), var(--border-color-2));
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .jobs-container {
+    padding: 10px;
+  }
+
+  .job-card {
+    padding: 15px;
+    width: 90%; /* Make it a little bigger for mobile */
+  }
+
+  .jobs-container h1 {
+    font-size: 28px;
+  }
+
+  .job-summary h2 {
+    font-size: 20px;
+  }
+
+  .job-summary h3 {
+    font-size: 18px;
+  }
+}
+.jobs-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.job-card {
+  padding: 20px;
+  border: 2px solid;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.job-details {
+  margin-top: 10px;
+}
+
+.apply-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
