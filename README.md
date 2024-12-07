@@ -30,7 +30,7 @@ Install both frontend and backend dependencies:
 
 bash
 Copy code
-# For backend (Node.js)
+**For backend (Node.js)**
 npm install
 3. Set Up the Database
 Install PostgreSQL and create a new database named opportuniti.
